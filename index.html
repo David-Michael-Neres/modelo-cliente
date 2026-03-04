@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modelo Cliente Pro</title>
+  <title>David Michael Neres | Desenvolvedor Web</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -15,7 +17,7 @@
 
     body {
       background: #f4f6f9;
-      color: #333;
+      color: #1f2937;
     }
 
     header {
@@ -27,29 +29,31 @@
       align-items: center;
       position: sticky;
       top: 0;
+      z-index: 1000;
     }
 
     header h1 {
       font-size: 20px;
+      font-weight: 600;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 25px;
       font-weight: 500;
     }
 
     .hero {
-      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      background: linear-gradient(135deg, #1e3a8a, #0f172a);
       color: white;
       padding: 100px 10%;
       text-align: center;
     }
 
     .hero h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
+      font-size: 42px;
+      margin-bottom: 15px;
     }
 
     .hero p {
@@ -58,9 +62,9 @@
     }
 
     .btn {
-      background: #fff;
-      color: #1e3a8a;
-      padding: 12px 30px;
+      background: #22c55e;
+      color: white;
+      padding: 14px 32px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: 600;
@@ -83,12 +87,25 @@
       background: white;
       padding: 30px;
       border-radius: 15px;
-      width: 280px;
+      width: 300px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .card h3 {
       margin-bottom: 15px;
+      color: #1e3a8a;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      margin-top: 40px;
+      line-height: 1.6;
     }
 
     footer {
@@ -98,46 +115,78 @@
       padding: 40px 10%;
       margin-top: 50px;
     }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #22c55e;
+      color: white;
+      padding: 15px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Empresa Pro</h1>
+  <h1>David Michael Neres</h1>
   <nav>
-    <a href="#">Início</a>
-    <a href="#">Serviços</a>
-    <a href="#">Contato</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="https://www.linkedin.com/in/david-michael-neres-aa90b7224/" target="_blank">LinkedIn</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Transformamos sua presença digital</h2>
-  <p>Soluções modernas para empresas que querem crescer online.</p>
-  <a href="#" class="btn">Solicitar Orçamento</a>
+  <h2>Desenvolvedor Web & Soluções Digitais</h2>
+  <p>Criação de sites profissionais e soluções digitais para empresas que querem crescer online.</p>
+  <a class="btn" href="https://wa.me/5599984637902" target="_blank">Falar no WhatsApp</a>
 </section>
 
-<section class="section">
-  <h2>Nossos Serviços</h2>
+<section class="section" id="servicos">
+  <h2>Serviços</h2>
+
   <div class="cards">
     <div class="card">
       <h3>Criação de Sites</h3>
-      <p>Sites modernos, responsivos e profissionais.</p>
+      <p>Sites institucionais modernos, responsivos e profissionais.</p>
     </div>
+
     <div class="card">
       <h3>Landing Pages</h3>
-      <p>Páginas focadas em conversão e vendas.</p>
+      <p>Páginas focadas em conversão e captação de clientes.</p>
     </div>
+
     <div class="card">
-      <h3>Manutenção</h3>
-      <p>Atualizações e suporte contínuo.</p>
+      <h3>Suporte & Manutenção</h3>
+      <p>Atualizações, melhorias e suporte técnico contínuo.</p>
     </div>
   </div>
 </section>
 
+<section class="section" id="sobre">
+  <h2>Sobre Mim</h2>
+  <div class="about">
+    <p>
+      Sou Desenvolvedor Web e Técnico em TI, atuando em Imperatriz - MA e atendendo todo o Brasil.
+      Meu foco é criar soluções digitais modernas, funcionais e estratégicas para empresas que desejam fortalecer sua presença online.
+    </p>
+  </div>
+</section>
+
 <footer>
-  <p>© 2026 Empresa Pro - Todos os direitos reservados.</p>
+  <p>© 2026 David Michael Neres | Imperatriz - MA | Todos os direitos reservados.</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/5599984637902" target="_blank">
+  WhatsApp
+</a>
 
 </body>
 </html>
