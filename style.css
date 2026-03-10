@@ -133,3 +133,21 @@ section {
 .whatsapp-float:hover {
     transform: scale(1.05);
 }
+.processo {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.processo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.passo {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
