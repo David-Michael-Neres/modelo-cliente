@@ -1,290 +1,381 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Michael Neres | Desenvolvedor Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>David Michael Neres | Desenvolvedor Web</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    body {
-      background: #f4f6f9;
-      color: #1f2937;
-    }
+<style>
 
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 20px 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    header h1 {
-      font-size: 20px;
-      font-weight: 600;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: 500;
-    }
+body{
+background:#f4f6f9;
+color:#1f2937;
+}
 
-    .hero {
-      background: linear-gradient(135deg, #1e3a8a, #0f172a);
-      color: white;
-      padding: 100px 10%;
-      text-align: center;
-    }
+header{
+background:#0f172a;
+color:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
 
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
+header h1{
+font-size:20px;
+font-weight:600;
+}
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
 
-    .btn {
-      background: #22c55e;
-      color: white;
-      padding: 14px 32px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+.hero{
+background:linear-gradient(135deg,#1e3a8a,#0f172a);
+color:white;
+padding:100px 10%;
+text-align:center;
+}
 
-    .section {
-      padding: 80px 10%;
-      text-align: center;
-    }
+.hero h2{
+font-size:42px;
+margin-bottom:15px;
+}
 
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
 
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      width: 300px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
+.btn{
+background:#22c55e;
+color:white;
+padding:14px 32px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+.section{
+padding:80px 10%;
+text-align:center;
+}
 
-    .card h3 {
-      margin-bottom: 15px;
-      color: #1e3a8a;
-    }
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
 
-    .about {
-      max-width: 800px;
-      margin: auto;
-      margin-top: 40px;
-      line-height: 1.6;
-    }
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+width:300px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
 
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 40px 10%;
-      margin-top: 50px;
-    }
+.card:hover{
+transform:translateY(-5px);
+}
 
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #22c55e;
-      color: white;
-      padding: 15px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    }
+.card h3{
+margin-bottom:15px;
+color:#1e3a8a;
+}
 
-  </style>
+/* PORTFÓLIO */
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.projeto{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.projeto:hover{
+transform:translateY(-5px);
+}
+
+/* PROCESSO */
+
+.processo{
+padding:80px 10%;
+text-align:center;
+background:#f9fafb;
+}
+
+.processo-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.passo{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* SOBRE */
+
+.about{
+max-width:800px;
+margin:auto;
+margin-top:40px;
+line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px 10%;
+margin-top:50px;
+}
+
+/* BOTÃO WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#22c55e;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+nav a{
+margin:0 10px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>David Michael Neres</h1>
-  <nav>
-    <a href="#servicos">Serviços</a>
-    <a href="#portfolio">Projetos</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-    <a href="https://www.linkedin.com/in/david-michael-neres-aa90b7224/" target="_blank">LinkedIn</a>
-  </nav>
+<h1>David Michael Neres</h1>
+
+<nav>
+<a href="#servicos">Serviços</a>
+<a href="#portfolio">Projetos</a>
+<a href="#sobre">Sobre</a>
+<a href="https://www.linkedin.com/in/david-michael-neres-aa90b7224/" target="_blank">LinkedIn</a>
+</nav>
+
 </header>
 
+
 <section class="hero">
-  <h2>Criação de Sites Profissionais para Empresas</h2>
+
+<h2>Criação de Sites Profissionais para Empresas</h2>
+
 <p>Ajudo empresas a terem presença profissional na internet com sites modernos e rápidos.</p>
+
 <p><strong>Atendendo Imperatriz – MA e todo o Brasil</strong></p>
 
-  <a class="btn"
-     href="https://wa.me/5599984637902?text=Olá%20David%2C%20vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento."
-     target="_blank">
-     Solicitar Orçamento
-  </a>
+<a class="btn"
+href="https://wa.me/5599984637902?text=Olá%20David%2C%20vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento."
+target="_blank">
+Solicitar Orçamento
+</a>
+
 </section>
+
 
 <section class="section" id="servicos">
-  <h2>Serviços</h2>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Criação de Sites</h3>
-      <p>Sites institucionais modernos, responsivos e profissionais.</p>
-    </div>
+<h2>Serviços</h2>
 
-    <div class="card">
-      <h3>Landing Pages</h3>
-      <p>Páginas focadas em conversão e captação de clientes.</p>
-    </div>
+<div class="cards">
 
-    <div class="card">
-      <h3>Suporte & Manutenção</h3>
-      <p>Atualizações, melhorias e suporte técnico contínuo.</p>
-    </div>
-  </div>
+<div class="card">
+<h3>Criação de Sites</h3>
+<p>Sites institucionais modernos, responsivos e profissionais.</p>
+</div>
+
+<div class="card">
+<h3>Landing Pages</h3>
+<p>Páginas focadas em conversão e captação de clientes.</p>
+</div>
+
+<div class="card">
+<h3>Suporte & Manutenção</h3>
+<p>Atualizações, melhorias e suporte técnico contínuo.</p>
+</div>
+
+</div>
+
 </section>
-<section id="portfolio" class="portfolio">
-  <h2>Projetos</h2>
 
-  <div class="portfolio-grid">
 
-    <div class="projeto">
-      <h3>Site para Restaurante</h3>
-      <p>Modelo de site institucional com cardápio digital e contato via WhatsApp.</p>
-    </div>
+<section class="section" id="portfolio">
 
-    <div class="projeto">
-      <h3>Landing Page Comercial</h3>
-      <p>Página focada em geração de clientes e captação de leads.</p>
-    </div>
+<h2>Projetos</h2>
 
-    <div class="projeto">
-      <h3>Site Institucional Empresarial</h3>
-      <p>Site profissional para empresas apresentarem seus serviços online.</p>
-    </div>
+<div class="portfolio-grid">
 
-  </div>
+<div class="projeto">
+<h3>Site para Restaurante</h3>
+<p>Modelo de site institucional com cardápio digital e contato via WhatsApp.</p>
+</div>
+
+<div class="projeto">
+<h3>Landing Page Comercial</h3>
+<p>Página focada em geração de clientes e captação de leads.</p>
+</div>
+
+<div class="projeto">
+<h3>Site Institucional Empresarial</h3>
+<p>Site profissional para empresas apresentarem seus serviços online.</p>
+</div>
+
+</div>
+
 </section>
+
+
 <section class="processo">
-  <h2>Como funciona o projeto</h2>
 
-  <div class="processo-grid">
+<h2>Como funciona o projeto</h2>
 
-    <div class="passo">
-      <h3>1️⃣ Conversa inicial</h3>
-      <p>Entendo as necessidades da sua empresa e objetivos do site.</p>
-    </div>
+<div class="processo-grid">
 
-    <div class="passo">
-      <h3>2️⃣ Planejamento</h3>
-      <p>Definimos a estrutura do site e estratégia de presença online.</p>
-    </div>
+<div class="passo">
+<h3>1️⃣ Conversa inicial</h3>
+<p>Entendo as necessidades da sua empresa e objetivos do site.</p>
+</div>
 
-    <div class="passo">
-      <h3>3️⃣ Desenvolvimento</h3>
-      <p>Criação do site moderno, rápido e responsivo.</p>
-    </div>
+<div class="passo">
+<h3>2️⃣ Planejamento</h3>
+<p>Definimos a estrutura do site e estratégia de presença online.</p>
+</div>
 
-    <div class="passo">
-      <h3>4️⃣ Entrega</h3>
-      <p>Publicação do site e suporte inicial para o cliente.</p>
-    </div>
+<div class="passo">
+<h3>3️⃣ Desenvolvimento</h3>
+<p>Criação do site moderno, rápido e responsivo.</p>
+</div>
 
-  </div>
+<div class="passo">
+<h3>4️⃣ Entrega</h3>
+<p>Publicação do site e suporte inicial para o cliente.</p>
+</div>
+
+</div>
+
 </section>
+
+
 <section class="section" id="sobre">
-  <h2>Sobre Mim</h2>
-  <div class="about">
-    <p>
+
+<h2>Sobre Mim</h2>
+
+<div class="about">
+
+<p>
 Sou Desenvolvedor Web e Técnico em TI, atuando em Imperatriz – MA e atendendo empresas em todo o Brasil.
 Meu foco é criar sites modernos, rápidos e estratégicos para ajudar negócios a crescer no digital.
-    </p>
-  </div>
+</p>
+
+</div>
+
 </section>
-<section class="section" id="portfolio">
-  <h2>Projetos</h2>
-  <div class="cards">
 
-    <div class="card">
-      <h3>Site para Restaurante</h3>
-      <p>Modelo de site com cardápio digital e contato por WhatsApp.</p>
-    </div>
 
-    <div class="card">
-      <h3>Landing Page Comercial</h3>
-      <p>Página criada para captar clientes e gerar leads.</p>
-    </div>
-
-    <div class="card">
-      <h3>Site Institucional</h3>
-      <p>Apresentação profissional para empresas e prestadores de serviço.</p>
-    </div>
-
-  </div>
-</section>
 <section class="section">
-  <h2>Diferenciais</h2>
-  <div class="cards">
 
-    <div class="card">
-      <h3>Sites Responsivos</h3>
-      <p>Funcionam perfeitamente em celular, tablet e computador.</p>
-    </div>
+<h2>Diferenciais</h2>
 
-    <div class="card">
-      <h3>Integração com WhatsApp</h3>
-      <p>Clientes entram em contato de forma rápida e direta.</p>
-    </div>
+<div class="cards">
 
-    <div class="card">
-      <h3>Entrega Rápida</h3>
-      <p>Projetos simples podem ser entregues em poucos dias.</p>
-    </div>
+<div class="card">
+<h3>Sites Responsivos</h3>
+<p>Funcionam perfeitamente em celular, tablet e computador.</p>
+</div>
 
-  </div>
+<div class="card">
+<h3>Integração com WhatsApp</h3>
+<p>Clientes entram em contato de forma rápida e direta.</p>
+</div>
+
+<div class="card">
+<h3>Entrega Rápida</h3>
+<p>Projetos simples podem ser entregues em poucos dias.</p>
+</div>
+
+</div>
+
 </section>
+
+
 <footer>
-  <p>© 2026 David Michael Neres | Imperatriz - MA | Todos os direitos reservados.</p>
+
+<p>© 2026 David Michael Neres | Imperatriz - MA | Todos os direitos reservados.</p>
+
 </footer>
 
+
 <a class="whatsapp"
-   href="https://wa.me/5599984637902?text=Olá%20David%2C%20vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento."
-   target="_blank">
-  WhatsApp
+href="https://wa.me/5599984637902?text=Olá%20David%2C%20vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento."
+target="_blank">
+
+WhatsApp
+
 </a>
 
 </body>
